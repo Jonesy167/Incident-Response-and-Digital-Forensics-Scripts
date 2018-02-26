@@ -1,5 +1,9 @@
 del %~d0\verify.txt
+TINMEOUT 1
 del  %~d0\hashes.xml
-start %~d0\cmd_x64.exe /k "fciv.exe Tools -r -xml %~d0\hashes.xml" ::change file paths as appropriate
+TINMEOUT 1
+del %~d0\fciv.err
+TINMEOUT 1
+start %~d0\cmd_x86.exe /k "%~d0\fciv.exe %~d0\Tools -r -xml %~d0\hashes.xml" 
+TINMEOUT 3
 /k  exit
-%~d0\cmd_x64.exe /k exit
