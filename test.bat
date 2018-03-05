@@ -1,1 +1,0 @@
-start  cmd.exe /k  "%~d0\Tools\SysinternalsSuite\AccessChk.exe -a ieuser  *"
