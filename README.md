@@ -15,19 +15,22 @@ Key features include:
 
 
 Useage:
+1) Download USB image from https://jonesy167.sharefile.com/d-sc8f3e149abb4d1fa, extract the zip file to usb 
 
-1) create the folder you wish to output the evidence to, this could be on the USB, the compromised machine itself or a network drive. 
+2) create the folder you wish to output the evidence to, this could be on the USB, the compromised machine itself or a network drive. 
 
-2) Copy the file paht to the evidence folder e.g \\192.168.1\evidence_hdd\evidence you will need to provide it when asked where you wish to store evidence (1st question)
+3) Copy the file path to the evidence folder e.g \\192.168.1\evidence_hdd\evidence you will need to provide it when asked where you wish to store evidence (1st question)
 
-2) Simply plugin the USB Drive and run the .bat script runme_as_admin_x64.bat ad administrator and it will launch a cmd window which will guide you through the process
+4) Simply plugin the USB Drive and run the .bat script runme_as_admin_x64.bat ad administrator and it will launch a cmd window which will guide you through the process
 
 
 
-****if you experience issues check that the sytem32 folder on USB matches the one on the sytem you are investigating e.g if the system being investigated is Win10 copy from a trusted Win10 system - in some cases it doesn't seem to matter if the system32 tools such as ipconfig.exe are copied from a differnet OS, e.g ipconfig.exe copied from Win7 running on Win10, others can be more finicy, best practice is to replace the sytstem32 directory on the USB with one copied from a matching Operating System version and then run create_hashes_run_as_user.bat (tools folder) to update hash values. 
+****if you experience issues check that the sytem32 folder on USB matches the one on the sytem you are investigating e.g if the system being investigated is Win10 copy C:\Windows\System32 from a trusted Win10 system and replace the one on the USB (/tools/System32_x64 ensure the folder is called System32_x64 as scripts look for system32 tools within System32_x64.
+
+****In some cases it doesn't seem to matter if the system32 tools such as ipconfig.exe are copied from a differnet OS, e.g ipconfig.exe copied from Win7 running on Win10, others can be more finicy, best practice is to replace the sytstem32 directory on the USB with one copied from a matching Operating System version and then run create_hashes_run_as_user.bat (tools folder) to update hash values. 
 
 **the System32 folder in the image was copied from a trusted Win7Sp1 64 bit machine
 
 
-If you wish to add your own tools or change existing tools you will need to run create_hashes_run_as_user.bat (in tools folder) to generate new hashes and save as xml for fciv to check against when script is ran live.
+If you wish to add your own tools or change existing tools you may wish to run create_hashes_run_as_user.bat (in tools folder) to generate new hashes and save as xml for fciv to check against when script is ran live, otherwise it will register a hash missmatch.
 
