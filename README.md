@@ -1,5 +1,7 @@
 # A Framework of Scripts and tools to automate Live Incident Response
 
+**USB image can be downloaded from https://jonesy167.sharefile.com/d-sc8f3e149abb4d1fa (approx 2.1GB)
+
 
 Key features include:
 
