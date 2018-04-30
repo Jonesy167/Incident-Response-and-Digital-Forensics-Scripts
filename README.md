@@ -1,4 +1,4 @@
-# A Framework of Scripts and tools to automate Live Incident Response
+# A Framework of Scripts and tools to automate Live Incident Response on Windows Machines
 
 **USB image can be downloaded from https://jonesy167.sharefile.com/d-sc8f3e149abb4d1fa (approx 716MB, (2.1GB when extracted))
 MD5: 3c01d7fdf7c8b1fe3151514e088cb22b
