@@ -1,17 +1,25 @@
 # A Framework of Scripts and tools to automate Live Incident Response on Windows Machines
 
 **USB image can be downloaded from https://jonesy167.sharefile.com/d-sc8f3e149abb4d1fa (approx 716MB, (2.1GB when extracted))
-MD5: 3c01d7fdf7c8b1fe3151514e088cb22b
+
+**MD5Sum compressed .zip:  3c01d7fdf7c8b1fe3151514e088cb22b**
 
 
-Key features include:
+**Key features include:
 
-- Acquisistion of Physical memory (via dumpit.exe) capturing kernel and user space
-- Runs a series of live tools (mostly WinSysinternal and System32 tools) enumerating a system and collecting all pertinent information such as: networking information, important system events - such as new user added, networking information, File MAC times, startup programs, scheduled tasks and much more
-- Option to check tool integrity (via fciv.exe)
-- Option to check C:\Windows\System32 Dll integrity (due to Windows known DLL feature it is almost impossible to run any program on Windows without using DLL's from C:\Windows\System32 so it is a very good idea to check DLL's to avoid inadvertantly loading a compromised DLL
-- Evidence i.e the output of the tools can be writen to any local or network drive via SMB
+**Acquisistion of Physical memory (via dumpit.exe) capturing kernel and user space
 
+**Runs a series of live tools (predominantly WinSysinternal and System32 tools) enumerating a system and collecting all pertinent information such as: 
+- Networking information 
+- Important system events (new user added, networking information, File MAC times, startup programs, scheduled tasks and much more)
+- Detailed infomation about running processes and loaded DLL's
+- System Access information
+- Shared System Resources
+
+**Option to check tool integrity (via fciv.exe)
+**Option to check C:\Windows\System32 Dll integrity (due to 'Windows known DLL' feature it is almost impossible to run any program on Windows without using DLL's from C:\Windows\System32 so it is a very good idea to check DLL's to avoid inadvertantly loading a compromised DLL (DLL Hijacking)
+
+**Evidence i.e the output of the tools can be writen to any local or network drive via SMB**
 
 
 Useage:
