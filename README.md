@@ -29,7 +29,7 @@ Useage:
 
 3) Copy the file path to the evidence folder e.g \\192.168.1\evidence_hdd\evidence you will need to provide it when asked where you wish to store evidence (1st question)
 
-4) Simply plugin the USB Drive and run the .bat script runme_as_admin_x64.bat ad administrator and it will launch a cmd window which will guide you through the process
+4) Simply plugin the USB Drive and run the .bat script runme_as_admin_x64.bat as administrator and it will launch a cmd window which will guide you through the process
 
 
 
