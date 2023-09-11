@@ -1,4 +1,9 @@
 @echo off
+if not "%1"=="am_admin" (
+    powershell -Command "Start-Process -Verb RunAs -FilePath '%0' -ArgumentList 'am_admin'" #check script is ran as admin
+    exit /b
+)
+
 echo ****
 set /P d=ENTER THE FILE PATH TO FOLDER WHERE EVIDENCE IS TO BE SAVED e.g \\192.168.1.1\My Passport\evidence             
 echo ****
